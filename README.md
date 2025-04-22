@@ -12,7 +12,7 @@ The dataset consists of labeled images categorized for BPH detection tasks.
 🛠️ Methodology
 Preprocessing
 Image resizing and normalization
-Cleaning inconsistent or noisy samples (if any)
+Cleaning inconsistent or noisy samples
 
 Data Augmentation
 Random rotations, flips, brightness adjustments, etc.
