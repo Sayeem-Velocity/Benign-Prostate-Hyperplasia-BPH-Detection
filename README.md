@@ -1,40 +1,71 @@
-This project focuses on detecting Benign Prostate Hyperplasia (BPH) using medical imaging data and a deep learning pipeline combining ResNet18 for feature extraction and Support Vector Machine (SVM) for classification.
 
-🔍 Overview
-Benign Prostate Hyperplasia is a non-cancerous enlargement of the prostate gland, common among older men. Early detection can help in timely treatment and better quality of life. In this project, we apply deep learning techniques to automate the detection process.
+# 🧬 BPH Detection using ResNet18 and SVM
 
-📂 Dataset
-The dataset used in this project is available on Kaggle:
+## 🔍 Project Overview
+
+This project focuses on detecting **Benign Prostate Hyperplasia (BPH)** using medical imaging and a deep learning pipeline. The approach integrates **ResNet18** for feature extraction and a **Support Vector Machine (SVM)** classifier to enable automated, accurate diagnosis.
+
+---
+
+## 🩺 About BPH
+
+**Benign Prostate Hyperplasia** is a non-cancerous enlargement of the prostate gland, commonly affecting older men. Early detection is crucial for timely intervention and improved quality of life. This project aims to assist clinicians through a reliable AI-based detection system.
+
+---
+
+## 📂 Dataset
+
+The dataset used is publicly available on Kaggle:
 🔗 [BPH Detection Dataset](https://www.kaggle.com/datasets/shahriar26s/benign-prostate-hyperplasiabph-detection)
 
-The dataset consists of labeled images categorized for BPH detection tasks.
+* Labeled medical images
+* Categories: BPH and Normal
 
-🛠️ Methodology
-Preprocessing
-Image resizing and normalization
-Cleaning inconsistent or noisy samples
+---
 
-Data Augmentation
-Random rotations, flips, brightness adjustments, etc.
-Improves model generalization and robustness
+## 🛠️ Methodology
 
-Model Architecture
-Feature Extraction: Pretrained ResNet18 (with final layers removed)
-Classification: Support Vector Machine (SVM) applied on extracted features
+### 🔧 Preprocessing
 
-Training & Evaluation
-Train/test split from dataset
+* Resized all images to uniform dimensions
+* Normalized pixel values
+* Removed inconsistent or low-quality samples
 
-📈 Results
-Metric	Value
-Accuracy	99%
+### 🔄 Data Augmentation
 
-📌 Future Work
-1. Explore different architectures (e.g., EfficientNet, ReXNet)
-2. Hyperparameter tuning for improved performance
-3. Deploy the model using a web interface
+* Applied random rotations, flips, and brightness shifts
+* Aimed at enhancing model generalization and robustness
 
-📧 Contact
-S.M. Shahriar
-Email: sayeem26s@gmail.com
-Kaggle: https://www.kaggle.com/shahriar26s
+### 🧠 Model Architecture
+
+* **Feature Extraction:** Pretrained **ResNet18** with final layers removed
+* **Classification:** Extracted features passed to an **SVM** classifier
+
+### 🏋️‍♂️ Training & Evaluation
+
+* Dataset split into training and testing subsets
+* SVM trained on deep features generated from ResNet18
+
+---
+
+## 📈 Results
+
+| Metric   | Value |
+| -------- | ----- |
+| Accuracy | 99%   |
+
+---
+
+## 🚀 Future Work
+
+* Experiment with architectures like **EfficientNet** and **ReXNet**
+* Perform **hyperparameter tuning** for optimal performance
+* Develop a **web-based interface** for clinical usability
+
+---
+
+## 📬 Contact
+
+**S.M. Shahriar**
+📧 Email: [sayeem26s@gmail.com](mailto:sayeem26s@gmail.com)
+📊 Kaggle: [shahriar26s](https://www.kaggle.com/shahriar26s)
