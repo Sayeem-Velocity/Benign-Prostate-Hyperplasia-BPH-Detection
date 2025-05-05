@@ -52,7 +52,7 @@ The dataset used is publicly available on Kaggle:
 
 | Metric   | Value |
 | -------- | ----- |
-| Accuracy | 99%   |
+| Accuracy | 95.5%   |
 
 ---
 
